@@ -1,0 +1,6 @@
+<div class="container p-4">
+ <div class="col-4" *ngFor="let cocktail of cocktails">
+   <h3 ><a routerLink="/Cocktail/Details/{{cocktail.idDrink}}" >{{cocktail.strDrink}}</a> </h3>
+   <img src="{{cocktail.strDrinkThumb}}" alt="" >
+ </div>
+</div>

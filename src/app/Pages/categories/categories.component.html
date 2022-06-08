@@ -1,0 +1,8 @@
+<div class="class container">
+    <div class="class card" *ngFor="let categorie of categories">
+      <a  *ngIf="validcat(categorie.strCategory)"  routerLink="/Cocktail/List/{{categorie.strCategory}}">
+        <h2>{{categorie.strCategory}}</h2>
+      </a>
+      
+    </div>
+</div>
